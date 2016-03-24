@@ -1,0 +1,357 @@
+<!doctype html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Easy Tree Example</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+   <!-- <link rel="stylesheet" href="http://cdn.bootcss.com/twitter-bootstrap/3.0.3/css/bootstrap.min.css">
+    <link rel="stylesheet" href="dist/css/easyTree.min.css">-->
+
+    <link rel="stylesheet"  href="css/jq/jquery-ui-1.10.4.custom.min.css">
+    <link rel="stylesheet"  href="css/bootstrap.css">
+    <link rel="stylesheet"  href="font-css/fontello.css" >
+    <link rel="stylesheet" href="css/select2/select2.min.css" >
+    <link rel="stylesheet" href="css/style.css" >
+    <link rel="stylesheet" href="css/fullcalendar.css" >
+    <link href="css/fullcalendar.print.css", rel="stylesheet", media="print" />
+    <link rel="stylesheet" href="css/bootstrap-modal-bs3patch.css" >
+    <link rel="stylesheet" href="css/bootstrap-modal.css" >
+    <link rel="stylesheet" href="css/bootstrap-switch.css" >
+    <link rel="stylesheet" href="css/bootstrap-tagsinput.css" >
+    <link rel="stylesheet" href="css/toastr.min.css" >
+    <link rel="stylesheet" href="css/pagination.css" >
+    <link rel="stylesheet" href="css/bootstrap-tagsinput.css" >
+    <link rel="stylesheet" href="css/datepicker.css" >
+    <link rel="stylesheet" href="css/easyTree-user.css" >
+    <link rel="stylesheet" href="css/waitMe.min.css" >
+    <link rel="stylesheet" href="css/finalstyle.css" >
+ <!--   <script src="js/jquery-1.10.2.min.js"></script>
+    <script src="js/bootstrap.min.js"></script>
+    <script src="dist/js/easyTree.min.js"></script>-->
+    <script type="text/javascript" src="js/jquery-1.11.2.min.js" ></script>
+    <script type="text/javascript" src="js/jquery.validate.min.js" ></script>
+    <script type="text/javascript" src="js/messages_cn.js" ></script>
+    <script type="text/javascript" src="js/jquery.validate.bootstrap.popover.min.js" ></script>
+    <script type="text/javascript" src="js/select2/select2.full.min.js" ></script>
+    <script type="text/javascript" src="js/runtime.js" ></script>
+    <script type="text/javascript" src="js/jquery-ui-1.10.4.custom.min.js" ></script>
+    <script type="text/javascript" src="js/fullcalendar.min.js" ></script>
+    <script type="text/javascript" src="js/toastr.min.js" ></script>
+    <script type="text/javascript" src="js/highcharts.js" ></script>
+    <script type="text/javascript" src="js/lego.js" ></script>
+    <script type="text/javascript" src="js/utils.js" ></script>
+    <script type="text/javascript" src="js/jquery.pagination.js" ></script>
+    <script type="text/javascript" src="js/template.js" ></script>
+    <script type="text/javascript" src="js/bootstrap-tagsinput.js" ></script>
+    <script type="text/javascript" src="js/jquery.fileupload.js" ></script>
+    <script type="text/javascript" src="js/jquery.iframe-transport.js" ></script>
+    <script type="text/javascript" src="js/jquery.ui.widget.js" ></script>
+    <script type="text/javascript" src="js/easyTree-user.js" ></script>
+    <script type="text/javascript" src="js/bootstrap-datepicker.js"></script>
+    <script type="text/javascript" src="js/bootstrap-tagsinput.js" ></script>
+    <script type="text/javascript" src="js/waitMe.min.js" ></script>
+    <script type="text/javascript" src="js/ajaxfileupload.js" ></script>
+    <script type="text/javascript" src="js/bootstrap.min.js" ></script>
+    <script type="text/javascript" src="js/bootstrap-button.js" ></script>
+    <script type="text/javascript" src="js/bootstrap-modalmanager.js" ></script>
+    <script type="text/javascript" src="js/bootstrap-modal.js" ></script>
+    <script type="text/javascript" src="js/bootstrap-switch.js" ></script>
+    <script type="text/javascript" src="js/bootstrap-filestyle.min.js" ></script>
+    <script type="text/javascript" src="js/jquery.fileDownload.js" ></script>
+
+    <style>
+        body {
+            background: #eee;
+        }
+    </style>
+</head>
+<body>
+<!-- html block -->
+<div class="lead-title" style="height:50px">
+    <p class="p-insect" style="color: #fafafa">Insect</p>
+</div>
+<div class="lead-second" style="height: 80px">sdfv</div>
+<div class="row m-t-20 m-b-20">
+    <div class="col-sm-3 col-sm-offset-1 mm-box form-horizontal filter-pan">
+        <div class="row-fluid">
+            <h3 class="text-success text-center">Insect Tree</h3>
+            <div id="search_box">
+                <form id="search_form" method="post" action="#">
+                    <input type="text" id="s" value="Search" class="swap_value" />
+                    <input type="image" src="http://files.jb51.net/demoimg/200912/btn_search_box.gif" width="27" height="24" id="go" alt="Search" title="Search" />
+                </form>
+            </div>
+            <div class="easy-tree" style="display: none">
+
+                    <ul>
+                        <li>Example 3
+                            <ul>
+                                <li>Example 1</li>
+                                <li>Example 2
+                                    <ul>
+                                        <li>Example 1</li>
+                                        <li>Example 2</li>
+                                        <li>Example 3</li>
+                                        <li>Example 4</li>
+                                    </ul>
+                                </li>
+                                <li>Example 3</li>
+                                <li>Example 4</li>
+                            </ul>
+                        </li>
+                        <li>Example 3
+                            <ul>
+                                <li>Example 1</li>
+                                <li>Example 2
+                                    <ul>
+                                        <li>Example 1</li>
+                                        <li>Example 2</li>
+                                        <li>Example 3</li>
+                                        <li>Example 4</li>
+                                    </ul>
+                                </li>
+                                <li>Example 3</li>
+                                <li>Example 4</li>
+                            </ul>
+                        </li>
+                        <li>Example 3
+                            <ul>
+                                <li>Example 1</li>
+                                <li>Example 2
+                                    <ul>
+                                        <li>Example 1</li>
+                                        <li>Example 2</li>
+                                        <li>Example 3</li>
+                                        <li>Example 4</li>
+                                    </ul>
+                                </li>
+                                <li>Example 3</li>
+                                <li>Example 4</li>
+                            </ul>
+                        </li>
+                        <li>Example 3
+                            <ul>
+                                <li>Example 1</li>
+                                <li>Example 2
+                                    <ul>
+                                        <li>Example 1</li>
+                                        <li>Example 2</li>
+                                        <li>Example 3</li>
+                                        <li>Example 4</li>
+                                    </ul>
+                                </li>
+                                <li>Example 3</li>
+                                <li>Example 4</li>
+                            </ul>
+                        </li>
+                        <li>Example 3
+                            <ul>
+                                <li>Example 1</li>
+                                <li>Example 2
+                                    <ul>
+                                        <li>Example 1</li>
+                                        <li>Example 2</li>
+                                        <li>Example 3</li>
+                                        <li>Example 4</li>
+                                    </ul>
+                                </li>
+                                <li>Example 3</li>
+                                <li>Example 4</li>
+                            </ul>
+                        </li>
+                        <li>Example 3
+                            <ul>
+                                <li>Example 1</li>
+                                <li>Example 2
+                                    <ul>
+                                        <li>Example 1</li>
+                                        <li>Example 2</li>
+                                        <li>Example 3</li>
+                                        <li>Example 4</li>
+                                    </ul>
+                                </li>
+                                <li>Example 3</li>
+                                <li>Example 4</li>
+                            </ul>
+                        </li>
+                        <li>Example 3
+                            <ul>
+                                <li>Example 1</li>
+                                <li>Example 2
+                                    <ul>
+                                        <li>Example 1</li>
+                                        <li>Example 2</li>
+                                        <li>Example 3</li>
+                                        <li>Example 4</li>
+                                    </ul>
+                                </li>
+                                <li>Example 3</li>
+                                <li>Example 4</li>
+                            </ul>
+                        </li>
+                        <li>Example 0
+                            <ul>
+                                <li>Example 1</li>
+                                <li>Example 2
+                                    <ul>
+                                        <li>Example 1</li>
+                                        <li>Example 2</li>
+                                        <li>Example 3</li>
+                                        <li>Example 4</li>
+                                    </ul>
+                                </li>
+                                <li>Example 3</li>
+                                <li>Example 4
+                                    <ul>
+                                        <li>Example 1
+                                            <ul>
+                                                <li>Example 1</li>
+                                                <li>Example 2</li>
+                                                <li>Example 3</li>
+                                                <li>Example 4</li>
+                                            </ul>
+                                        </li>
+                                        <li>Example 2</li>
+                                        <li>Example 3</li>
+                                        <li>Example 4</li>
+                                    </ul>
+                                </li>
+                            </ul>
+                        </li>
+                    </ul>
+            </div>
+
+        </div>
+
+     <!--   <div class="row m-b-20 text-center">
+            <div class="col-md-2 col-centered"></div>
+            <div class="col-md-8 col-centered">
+                <input class="holo" type="text" style="width: 100%" id="remark" name="remark" placeholder="备注">
+            </div>
+        </div>-->
+
+        <div class="row">
+            <div class="divider divider-default"></div>
+        </div>
+
+       
+    </div>
+    <div class="col-sm-7 col-sm-offset-0 mm-box form-horizontal filter-pan">
+            <div class="easy-tree2" >
+                <div class="main-content">
+                    <p>1.学名（中文）：光肩星天牛</p>
+                    <p>2.学名（拉丁文）：Anoplophora glabripennis（Motschulsky）</p>
+                    <p>3.学名（英文）：Asian longhorn beetle</p>
+                    <p>4.别名：亚洲长角天牛</p>
+                    <p>5.分类地位（中文）：<br/>
+                        ①　目：鞘翅目<br/>
+                        ②　科：天牛科<br/>
+                        ③　属：星天牛属<br/><br/>
+                        6.分类地位（拉丁文）：<br/>
+                        ①　目：Coleoptera<br/>
+                        ②　科：Cerambycidae<br/>
+                        ③　属：Anoplophora<br/></p>
+                    <p>7.害虫种类：蛀干害虫</p>
+                    <p>8.种类细分：天牛类</p>
+                    <p>9.形态特征：体长20-30mm，宽6.5-11.5mm。形似星天牛，体形较狭，体色黑色中带紫铜色，有时略带绿色。触角比星天牛略长。前胸背板无毛斑，中瘤不显突，侧刺较尖锐。中胸腹板瘤突较不发达。鞘翅基部无颗粒，光滑，翅面刻点较密，有细小皱纹，白色毛斑大小及排列比星天牛更不规则，有时较不清晰。足及腹面黑色，密被蓝白色绒毛。</p>
+                    <p>10.寄主:柳、杨、榆、苦楝、桑、水杉、槭、桦、元宝枫。</p>
+                    <p>11.分布：河北、辽宁、吉林、北京、山东、安徽、江苏、浙江、福建、河南、湖北、湖南、山西、宁夏、陕西、甘肃、四川、天津、上海、江西、内蒙古、云南、贵州、广东、黑龙江、广西；朝鲜、日本。</p>
+                    <p>12.采集地：秦岭</p>
+                </div>
+
+        </div>
+
+    </div>
+</div>
+
+
+
+
+    <!-- script block -->
+    <script type="text/javascript">
+
+        function toggleChevron(e) {
+            $(e.target)
+                    .prev('.panel-heading')
+                    .find("i.indicator")
+                    .toggleClass('glyphicon-chevron-down glyphicon-chevron-up');
+        }
+        $('#accordion').on('hidden.bs.collapse', toggleChevron);
+        $('#accordion').on('shown.bs.collapse', toggleChevron);
+
+        $(".selectpicker").select2({width: 180});
+        var treeLoader = new EasyTree.TreeLoader(".easy-tree");
+
+        treeLoader.buildTree({
+            addable: true,
+            editable: true,
+            deletable: true,
+            undoCallback : function() {
+                $("#undoOprConfirm").modal("show");
+            },
+            adjustSelect : function() {
+                $("#selectAdjustPoiCategory").modal("show");
+            }
+        });
+
+        $('.easy-tree-toolbar').affix({
+            offset: {
+                top: $('.easy-tree-toolbar').offset().top - 30
+            }
+        });
+
+        $("#cancel, .close").click(function() {
+            $(".modal").modal("hide");
+            $(".popover").each( function() {
+                $(this).hide();
+            });
+        });
+
+        $("#selectAdjustPoiCategory .ok").click(function() {
+            var adjustType = $("#selectAdjustPoiCategory #adjustType").val()
+            var adjustCategoryId = $("#selectAdjustPoiCategory #adjustCategoryId").val();
+
+            //add opr record to list
+            treeLoader.adjustNode(adjustCategoryId, adjustType);
+            $("#selectAdjustPoiCategory").modal('hide');
+        })
+
+        var oprCommitList = [];
+
+        $("#queryQuick").click(function() {
+            oprCommitList = treeLoader.getOprList();
+            if(oprCommitList.length == 0) {
+                showWarningMsg("您还未做任何操作！");
+            } else {
+                $("#opCommitOprConfirm").modal("show");
+            }
+        })
+
+        $("#opCommitOprConfirm #ok").click(function() {
+            startloading();
+            $.ajax({
+                type: "POST",
+                url: 'poiCategory/addProcess',
+                contentType: 'application/json',
+                dataType: "json",
+                data: JSON.stringify({remark : $('#remark').val(), poiOprs :oprCommitList}),
+                success: function (data) {
+                    closeLoading();
+                    toast(data);
+                    $("#opCommitOprConfirm").modal("hide");
+                    if(data.type == "SUCCESS") {
+                        lego.template.renderTemplateByKey("poiCategory.tree");
+                    }
+                }
+            });
+        })
+
+        $('#undoOprConfirm #ok').click(function() {
+            $('#undoOprConfirm').modal('hide');
+            lego.template.renderTemplateByKey("poiCategory.tree");
+        });
+
+
+    </script>
+</body>
+</html>
